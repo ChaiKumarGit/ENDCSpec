@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="pdml2html.xsl"?>
+<!-- You can find pdml2html.xsl in C:\Program Files\Wireshark or at https://code.wireshark.org/review/gitweb?p=wireshark.git;a=blob_plain;f=pdml2html.xsl. -->
+<pdml version="0" creator="wireshark/3.2.4" time="Wed Jul  8 11:49:07 2020" capture_file="attachTemp.pcap">
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="131">
+    <field name="num" pos="0" show="1" showname="Number" value="1" size="131"/>
+    <field name="len" pos="0" show="131" showname="Frame Length" value="83" size="131"/>
+    <field name="caplen" pos="0" show="131" showname="Captured Length" value="83" size="131"/>
+    <field name="timestamp" pos="0" show="Jul  8, 2020 11:49:05.000000000 AUS Eastern Standard Time" showname="Captured Time" value="1594172945.000000000" size="131"/>
+  </proto>
+  <proto name="frame" showname="Frame 1: 131 bytes on wire (1048 bits), 131 bytes captured (1048 bits)" size="131" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: USER 0 (45)" size="0" pos="0" show="45"/>
+    <field name="frame.time" showname="Arrival Time: Jul  8, 2020 11:49:05.000000000 AUS Eastern Standard Time" size="0" pos="0" show="Jul  8, 2020 11:49:05.000000000 AUS Eastern Standard Time"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_epoch" showname="Epoch Time: 1594172945.000000000 seconds" size="0" pos="0" show="1594172945.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.number" showname="Frame Number: 1" size="0" pos="0" show="1"/>
+    <field name="frame.len" showname="Frame Length: 131 bytes (1048 bits)" size="0" pos="0" show="131"/>
+    <field name="frame.cap_len" showname="Capture Length: 131 bytes (1048 bits)" size="0" pos="0" show="131"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="0"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="0"/>
+    <field name="frame.protocols" showname="Protocols in frame: user_dlt:nas-eps:ipcp" size="0" pos="0" show="user_dlt:nas-eps:ipcp"/>
+  </proto>
+  <proto name="user_dlt" showname="DLT: 147, Payload: nas-eps (Non-Access-Stratum (NAS)PDU)" size="131" pos="0"/>
+  <proto name="nas-eps" showname="Non-Access-Stratum (NAS)PDU" size="131" pos="0">
+    <field name="nas_eps.security_header_type" showname="0000 .... = Security header type: Plain NAS message, not security protected (0)" size="1" pos="0" show="0" value="0" unmaskedvalue="07"/>
+    <field name="gsm_a.L3_protocol_discriminator" showname=".... 0111 = Protocol discriminator: EPS mobility management messages (0x7)" size="1" pos="0" show="0x00000007" value="7" unmaskedvalue="07"/>
+    <field name="nas_eps.nas_msg_emm_type" showname="NAS EPS Mobility Management Message Type: Attach request (0x41)" size="1" pos="1" show="65" value="41"/>
+    <field name="nas_eps.emm.tsc" showname="0... .... = Type of security context flag (TSC): Native security context (for KSIasme)" size="1" pos="2" show="0" value="02"/>
+    <field name="nas_eps.emm.nas_key_set_id" showname=".000 .... = NAS key set identifier:  (0)" size="1" pos="2" show="0" value="02"/>
+    <field name="nas_eps.spare_bits" showname=".... 0... = Spare bit(s): 0x00" size="1" pos="2" show="0x00000000" value="02"/>
+    <field name="nas_eps.emm.eps_att_type" showname=".... .010 = EPS attach type: Combined EPS/IMSI attach (2)" size="1" pos="2" show="2" value="02"/>
+    <field name="" show="EPS mobile identity" size="12" pos="3" value="0bf605f510c54590f0008d01">
+      <field name="gsm_a.len" showname="Length: 11" size="1" pos="3" show="11" value="0b"/>
+      <field name="nas_eps.emm.odd_even" showname=".... 0... = Odd/even indication: Even number of identity digits" size="1" pos="4" show="0" value="0" unmaskedvalue="f6"/>
+      <field name="nas_eps.emm.type_of_id" showname=".... .110 = Type of identity: GUTI (6)" size="1" pos="4" show="6" value="6" unmaskedvalue="f6"/>
+      <field name="e212.mcc" showname="Mobile Country Code (MCC): Australia (505)" size="2" pos="5" show="505" value="05f5"/>
+      <field name="e212.mnc" showname="Mobile Network Code (MNC): Telstra Corporation Ltd. (01)" size="2" pos="6" show="1" value="f510"/>
+      <field name="nas_eps.emm.mme_grp_id" showname="MME Group ID: 50501" size="2" pos="8" show="50501" value="c545"/>
+      <field name="nas_eps.emm.mme_code" showname="MME Code: 144" size="1" pos="10" show="144" value="90"/>
+      <field name="nas_eps.emm.m_tmsi" showname="M-TMSI: 0xf0008d01" size="4" pos="11" show="0xf0008d01" value="f0008d01"/>
+    </field>
+    <field name="" show="UE network capability" size="8" pos="15" value="07e060c040190090">
+      <field name="gsm_a.len" showname="Length: 7" size="1" pos="15" show="7" value="07"/>
+      <field name="nas_eps.emm.eea0" showname="1... .... = EEA0: Supported" size="1" pos="16" show="1" value="1" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.128eea1" showname=".1.. .... = 128-EEA1: Supported" size="1" pos="16" show="1" value="1" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.128eea2" showname="..1. .... = 128-EEA2: Supported" size="1" pos="16" show="1" value="1" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.eea3" showname="...0 .... = 128-EEA3: Not supported" size="1" pos="16" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.eea4" showname=".... 0... = EEA4: Not supported" size="1" pos="16" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.eea5" showname=".... .0.. = EEA5: Not supported" size="1" pos="16" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.eea6" showname=".... ..0. = EEA6: Not supported" size="1" pos="16" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.eea7" showname=".... ...0 = EEA7: Not supported" size="1" pos="16" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.eia0" showname="0... .... = EIA0: Not supported" size="1" pos="17" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.128eia1" showname=".1.. .... = 128-EIA1: Supported" size="1" pos="17" show="1" value="1" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.128eia2" showname="..1. .... = 128-EIA2: Supported" size="1" pos="17" show="1" value="1" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.eia3" showname="...0 .... = 128-EIA3: Not supported" size="1" pos="17" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.eia4" showname=".... 0... = EIA4: Not supported" size="1" pos="17" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.eia5" showname=".... .0.. = EIA5: Not supported" size="1" pos="17" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.eia6" showname=".... ..0. = EIA6: Not supported" size="1" pos="17" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.eia7" showname=".... ...0 = EIA7: Not supported" size="1" pos="17" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.uea0" showname="1... .... = UEA0: Supported" size="1" pos="18" show="1" value="1" unmaskedvalue="c0"/>
+      <field name="nas_eps.emm.uea1" showname=".1.. .... = UEA1: Supported" size="1" pos="18" show="1" value="1" unmaskedvalue="c0"/>
+      <field name="nas_eps.emm.uea2" showname="..0. .... = UEA2: Not supported" size="1" pos="18" show="0" value="0" unmaskedvalue="c0"/>
+      <field name="nas_eps.emm.uea3" showname="...0 .... = UEA3: Not supported" size="1" pos="18" show="0" value="0" unmaskedvalue="c0"/>
+      <field name="nas_eps.emm.uea4" showname=".... 0... = UEA4: Not supported" size="1" pos="18" show="0" value="0" unmaskedvalue="c0"/>
+      <field name="nas_eps.emm.uea5" showname=".... .0.. = UEA5: Not supported" size="1" pos="18" show="0" value="0" unmaskedvalue="c0"/>
+      <field name="nas_eps.emm.uea6" showname=".... ..0. = UEA6: Not supported" size="1" pos="18" show="0" value="0" unmaskedvalue="c0"/>
+      <field name="nas_eps.emm.uea7" showname=".... ...0 = UEA7: Not supported" size="1" pos="18" show="0" value="0" unmaskedvalue="c0"/>
+      <field name="nas_eps.emm.emm_ucs2_supp" showname="0... .... = UCS2 support (UCS2): The UE has a preference for the default alphabet" size="1" pos="19" show="0" value="0" unmaskedvalue="40"/>
+      <field name="nas_eps.emm.uia1" showname=".1.. .... = UMTS integrity algorithm UIA1: Supported" size="1" pos="19" show="1" value="1" unmaskedvalue="40"/>
+      <field name="nas_eps.emm.uia2" showname="..0. .... = UMTS integrity algorithm UIA2: Not supported" size="1" pos="19" show="0" value="0" unmaskedvalue="40"/>
+      <field name="nas_eps.emm.uia3" showname="...0 .... = UMTS integrity algorithm UIA3: Not supported" size="1" pos="19" show="0" value="0" unmaskedvalue="40"/>
+      <field name="nas_eps.emm.uia4" showname=".... 0... = UMTS integrity algorithm UIA4: Not supported" size="1" pos="19" show="0" value="0" unmaskedvalue="40"/>
+      <field name="nas_eps.emm.uia5" showname=".... .0.. = UMTS integrity algorithm UIA5: Not supported" size="1" pos="19" show="0" value="0" unmaskedvalue="40"/>
+      <field name="nas_eps.emm.uia6" showname=".... ..0. = UMTS integrity algorithm UIA6: Not supported" size="1" pos="19" show="0" value="0" unmaskedvalue="40"/>
+      <field name="nas_eps.emm.uia7" showname=".... ...0 = UMTS integrity algorithm UIA7: Not supported" size="1" pos="19" show="0" value="0" unmaskedvalue="40"/>
+      <field name="nas_eps.emm.prose_dd_cap" showname="0... .... = ProSe direct discovery: Not supported" size="1" pos="20" show="0" value="0" unmaskedvalue="19"/>
+      <field name="nas_eps.emm.prose_cap" showname=".0.. .... = ProSe: Not supported" size="1" pos="20" show="0" value="0" unmaskedvalue="19"/>
+      <field name="nas_eps.emm.h245_ash_cap" showname="..0. .... = H.245 After SRVCC Handover: Not supported" size="1" pos="20" show="0" value="0" unmaskedvalue="19"/>
+      <field name="nas_eps.emm.acc_csfb_cap" showname="...1 .... = Access class control for CSFB: Supported" size="1" pos="20" show="1" value="1" unmaskedvalue="19"/>
+      <field name="nas_eps.emm.lpp_cap" showname=".... 1... = LTE Positioning Protocol: Supported" size="1" pos="20" show="1" value="1" unmaskedvalue="19"/>
+      <field name="nas_eps.emm.lcs_cap" showname=".... .0.. = Location services (LCS) notification mechanisms: Not supported" size="1" pos="20" show="0" value="0" unmaskedvalue="19"/>
+      <field name="nas_eps.emm.1xsrvcc_cap" showname=".... ..0. = SRVCC from E-UTRAN to cdma2000 1xCS: Not supported" size="1" pos="20" show="0" value="0" unmaskedvalue="19"/>
+      <field name="nas_eps.emm.nf_cap" showname=".... ...1 = Notification procedure: Supported" size="1" pos="20" show="1" value="1" unmaskedvalue="19"/>
+      <field name="nas_eps.emm.epco_cap" showname="0... .... = Extended protocol configuration options: Not supported" size="1" pos="21" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.hc_cp_ciot_cap" showname=".0.. .... = Header compression for control plane CIoT EPS optimization: Not supported" size="1" pos="21" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.er_wo_pdn_cap" showname="..0. .... = EMM-REGISTERED w/o PDN connectivity: Not supported" size="1" pos="21" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.s1u_data_cap" showname="...0 .... = S1-U data transfer: Not supported" size="1" pos="21" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.up_ciot_cap" showname=".... 0... = User plane CIoT EPS optimization: Not supported" size="1" pos="21" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.cp_ciot_cap" showname=".... .0.. = Control plane CIoT EPS optimization: Not supported" size="1" pos="21" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.prose_relay_cap" showname=".... ..0. = ProSe UE-to-network relay: Not supported" size="1" pos="21" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.prose_dc_cap" showname=".... ...0 = ProSe direct communication: Not supported" size="1" pos="21" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.spare_bits" showname="1... .... = Spare bit(s): 0x01" size="1" pos="22" show="0x00000001" value="90"/>
+      <field name="nas_eps.emm.15_bearers_cap" showname="1... .... = Signalling for a maximum number of 15 EPS bearer contexts: Supported" size="1" pos="22" show="1" value="1" unmaskedvalue="90"/>
+      <field name="nas_eps.emm.sgc_cap" showname=".0.. .... = Service gap control: Not supported" size="1" pos="22" show="0" value="0" unmaskedvalue="90"/>
+      <field name="nas_eps.emm.n1mode_cap" showname="..0. .... = N1 mode: Not supported" size="1" pos="22" show="0" value="0" unmaskedvalue="90"/>
+      <field name="nas_eps.emm.dcnr_cap" showname="...1 .... = Dual connectivity with NR: Supported" size="1" pos="22" show="1" value="1" unmaskedvalue="90"/>
+      <field name="nas_eps.emm.cp_backoff_cap" showname=".... 0... = Control plane data backoff: Not supported" size="1" pos="22" show="0" value="0" unmaskedvalue="90"/>
+      <field name="nas_eps.emm.restrict_ec_cap" showname=".... .0.. = Restriction on use of enhanced coverage: Not supported" size="1" pos="22" show="0" value="0" unmaskedvalue="90"/>
+      <field name="nas_eps.emm.v2x_pc5_cap" showname=".... ..0. = V2X communication over PC5: Not supported" size="1" pos="22" show="0" value="0" unmaskedvalue="90"/>
+      <field name="nas_eps.emm.multiple_drb_cap" showname=".... ...0 = Multiple DRB: Not supported" size="1" pos="22" show="0" value="0" unmaskedvalue="90"/>
+    </field>
+    <field name="" show="ESM message container" size="57" pos="23" value="00370203d031d127308080211001000010810600000000830600000000000d00000300000a00000500001000001100001a0101002300002400">
+      <field name="gsm_a.len" showname="Length: 55" size="2" pos="23" show="55" value="0037"/>
+      <field name="nas_eps.emm.esm_msg_cont" showname="ESM message container contents: 0203d031d127308080211001000010810600000000830600\xe2\x80\xa6" size="55" pos="25" show="02:03:d0:31:d1:27:30:80:80:21:10:01:00:00:10:81:06:00:00:00:00:83:06:00:00:00:00:00:0d:00:00:03:00:00:0a:00:00:05:00:00:10:00:00:11:00:00:1a:01:01:00:23:00:00:24:00" value="0203d031d127308080211001000010810600000000830600000000000d00000300000a00000500001000001100001a0101002300002400">
+        <field name="nas_eps.bearer_id" showname="0000 .... = EPS bearer identity: No EPS bearer identity assigned (0)" size="1" pos="25" show="0" value="0" unmaskedvalue="02"/>
+        <field name="gsm_a.L3_protocol_discriminator" showname=".... 0010 = Protocol discriminator: EPS session management messages (0x2)" size="1" pos="25" show="0x00000002" value="2" unmaskedvalue="02"/>
+        <field name="nas_eps.esm.proc_trans_id" showname="Procedure transaction identity: 3" size="1" pos="26" show="3" value="03"/>
+        <field name="nas_eps.nas_msg_esm_type" showname="NAS EPS session management messages: PDN connectivity request (0xd0)" size="1" pos="27" show="208" value="d0"/>
+        <field name="nas_eps.esm_pdn_type" showname="0011 .... = PDN type: IPv4v6 (3)" size="1" pos="28" show="3" value="31"/>
+        <field name="nas_eps.esm_request_type" showname=".... 0001 = Request type: Initial request (1)" size="1" pos="28" show="1" value="31"/>
+        <field name="" show="ESM information transfer flag" size="1" pos="29" value="d1">
+          <field name="gsm_a.common.elem_id" showname="1101 .... = Element ID: 0xd-" size="1" pos="29" show="0x0000000d" value="D" unmaskedvalue="d1"/>
+          <field name="nas_eps.spare_bits" showname=".... 000. = Spare bit(s): 0x00" size="1" pos="29" show="0x00000000" value="d1"/>
+          <field name="nas_eps.esm.eit" showname=".... ...1 = EIT (ESM information transfer): Security protected ESM information transfer required" size="1" pos="29" show="1" value="1" unmaskedvalue="d1"/>
+        </field>
+        <field name="" show="Protocol Configuration Options" size="50" pos="30" value="27308080211001000010810600000000830600000000000d00000300000a00000500001000001100001a0101002300002400">
+          <field name="gsm_a.gm.elem_id" showname="Element ID: 0x27" size="1" pos="30" show="0x00000027" value="27"/>
+          <field name="gsm_a.len" showname="Length: 48" size="1" pos="31" show="48" value="30"/>
+          <field name="gsm_a.gm.sm.link_dir" showname="Link direction: MS to network (0)" size="0" pos="32" show="0"/>
+          <field name="gsm_a.gm.sm.ext" showname="1... .... = Extension: True" size="1" pos="32" show="1" value="1" unmaskedvalue="80"/>
+          <field name="gsm_a.gm.configuration_protocol" showname=".... .000 = Configuration Protocol: PPP for use with IP PDP type or IP PDN type (0)" size="1" pos="32" show="0" value="0" unmaskedvalue="80"/>
+          <field name="gsm_a.gm.sm.pco_pid" showname="Protocol or Container ID: Internet Protocol Control Protocol (0x8021)" size="2" pos="33" show="0x00008021" value="8021">
+            <field name="gsm_a.gm.sm.pco.length" showname="Length: 0x10 (16)" size="1" pos="35" show="0x00000010" value="10"/>
+            <proto name="ipcp" showname="PPP IP Control Protocol" size="16" pos="36">
+              <field name="ppp.code" showname="Code: Configuration Request (1)" size="1" pos="36" show="1" value="01"/>
+              <field name="ppp.identifier" showname="Identifier: 0 (0x00)" size="1" pos="37" show="0" value="00"/>
+              <field name="ppp.length" showname="Length: 16" size="2" pos="38" show="16" value="0010"/>
+              <field name="" show="Options: (12 bytes), Primary DNS Server IP Address, Secondary DNS Server IP Address" size="12" pos="40" value="810600000000830600000000">
+                <field name="ipcp.opt.pri_dns" showname="Primary DNS Server IP Address" size="6" pos="40" show="81:06:00:00:00:00" value="810600000000">
+                  <field name="ipcp.opt.type" showname="Type: Primary DNS Server IP Address (129)" size="1" pos="40" show="129" value="81"/>
+                  <field name="ipcp.opt.length" showname="Length: 6" size="1" pos="41" show="6" value="06"/>
+                  <field name="ipcp.opt.pri_dns_address" showname="Primary DNS Address: 0.0.0.0" size="4" pos="42" show="0.0.0.0" value="00000000"/>
+                </field>
+                <field name="ipcp.opt.sec_dns" showname="Secondary DNS Server IP Address" size="6" pos="46" show="83:06:00:00:00:00" value="830600000000">
+                  <field name="ipcp.opt.type" showname="Type: Secondary DNS Server IP Address (131)" size="1" pos="46" show="131" value="83"/>
+                  <field name="ipcp.opt.length" showname="Length: 6" size="1" pos="47" show="6" value="06"/>
+                  <field name="ipcp.opt.sec_dns_address" showname="Secondary DNS Address: 0.0.0.0" size="4" pos="48" show="0.0.0.0" value="00000000"/>
+                </field>
+              </field>
+            </proto>
+          </field>
+          <field name="gsm_a.gm.sm.pco_pid" showname="Protocol or Container ID: DNS Server IPv4 Address Request (0x000d)" size="2" pos="52" show="0x0000000d" value="000d">
+            <field name="gsm_a.gm.sm.pco.length" showname="Length: 0x00 (0)" size="1" pos="54" show="0x00000000" value="00"/>
+          </field>
+          <field name="gsm_a.gm.sm.pco_pid" showname="Protocol or Container ID: DNS Server IPv6 Address Request (0x0003)" size="2" pos="55" show="0x00000003" value="0003">
+            <field name="gsm_a.gm.sm.pco.length" showname="Length: 0x00 (0)" size="1" pos="57" show="0x00000000" value="00"/>
+          </field>
+          <field name="gsm_a.gm.sm.pco_pid" showname="Protocol or Container ID: IP address allocation via NAS signalling (0x000a)" size="2" pos="58" show="0x0000000a" value="000a">
+            <field name="gsm_a.gm.sm.pco.length" showname="Length: 0x00 (0)" size="1" pos="60" show="0x00000000" value="00"/>
+          </field>
+          <field name="gsm_a.gm.sm.pco_pid" showname="Protocol or Container ID: MS Support of Network Requested Bearer Control indicator (0x0005)" size="2" pos="61" show="0x00000005" value="0005">
+            <field name="gsm_a.gm.sm.pco.length" showname="Length: 0x00 (0)" size="1" pos="63" show="0x00000000" value="00"/>
+          </field>
+          <field name="gsm_a.gm.sm.pco_pid" showname="Protocol or Container ID: IPv4 Link MTU Request (0x0010)" size="2" pos="64" show="0x00000010" value="0010">
+            <field name="gsm_a.gm.sm.pco.length" showname="Length: 0x00 (0)" size="1" pos="66" show="0x00000000" value="00"/>
+          </field>
+          <field name="gsm_a.gm.sm.pco_pid" showname="Protocol or Container ID: MS support of Local address in TFT indicator (0x0011)" size="2" pos="67" show="0x00000011" value="0011">
+            <field name="gsm_a.gm.sm.pco.length" showname="Length: 0x00 (0)" size="1" pos="69" show="0x00000000" value="00"/>
+          </field>
+          <field name="gsm_a.gm.sm.pco_pid" showname="Protocol or Container ID: PDU session ID (0x001a)" size="2" pos="70" show="0x0000001a" value="001a">
+            <field name="gsm_a.gm.sm.pco.length" showname="Length: 0x01 (1)" size="1" pos="72" show="0x00000001" value="01"/>
+            <field name="gsm_a.gm.sm.pco.pdu_session_id" showname="PDU session identity: PDU session identity value 1 (1)" size="1" pos="73" show="1" value="01"/>
+          </field>
+          <field name="gsm_a.gm.sm.pco_pid" showname="Protocol or Container ID: QoS rules with the length of two octets support indicator (0x0023)" size="2" pos="74" show="0x00000023" value="0023">
+            <field name="gsm_a.gm.sm.pco.length" showname="Length: 0x00 (0)" size="1" pos="76" show="0x00000000" value="00"/>
+          </field>
+          <field name="gsm_a.gm.sm.pco_pid" showname="Protocol or Container ID: QoS flow descriptions with the length of two octets support indicator (0x0024)" size="2" pos="77" show="0x00000024" value="0024">
+            <field name="gsm_a.gm.sm.pco.length" showname="Length: 0x00 (0)" size="1" pos="79" show="0x00000000" value="00"/>
+          </field>
+        </field>
+      </field>
+    </field>
+    <field name="" show="Tracking area identity - Last visited registered TAI" size="6" pos="80" value="5205f510ff20">
+      <field name="nas_eps.emm.elem_id" showname="Element ID: 0x52" size="1" pos="80" show="0x00000052" value="52"/>
+      <field name="e212.tai.mcc" showname="Mobile Country Code (MCC): Australia (505)" size="2" pos="81" show="505" value="05f5"/>
+      <field name="e212.tai.mnc" showname="Mobile Network Code (MNC): Telstra Corporation Ltd. (01)" size="2" pos="82" show="1" value="f510"/>
+      <field name="nas_eps.emm.tai_tac" showname="Tracking area code(TAC): 65312" size="2" pos="84" show="65312" value="ff20"/>
+    </field>
+    <field name="" show="DRX Parameter" size="3" pos="86" value="5c0a00">
+      <field name="gsm_a.gm.elem_id" showname="Element ID: 0x5c" size="1" pos="86" show="0x0000005c" value="5c"/>
+      <field name="gsm_a.gm.gmm.split_pg_cycle_code" showname="SPLIT PG CYCLE CODE: 10 (10)" size="1" pos="87" show="10" value="0a"/>
+      <field name="gsm_a.gm.gmm.cn_spec_drx_cycle_len_coef" showname="0000 .... = CN Specific DRX cycle length coefficient: CN Specific DRX cycle length coefficient / value not specified by the MS (0)" size="1" pos="88" show="0" value="0" unmaskedvalue="00"/>
+      <field name="gsm_a.gm.gmm.split_on_ccch" showname=".... 0... = SPLIT on CCCH: Split pg cycle on CCCH is not supported by the mobile station" size="1" pos="88" show="0" value="0" unmaskedvalue="00"/>
+      <field name="gsm_a.gm.gmm.non_drx_timer" showname=".... .000 = Non-DRX timer: no non-DRX mode after transfer state (0)" size="1" pos="88" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="" show="MS Network Capability" size="6" pos="89" value="310465e02e01">
+      <field name="gsm_a.gm.elem_id" showname="Element ID: 0x31" size="1" pos="89" show="0x00000031" value="31"/>
+      <field name="gsm_a.len" showname="Length: 4" size="1" pos="90" show="4" value="04"/>
+      <field name="gsm_a.gm.gmm.net_cap.gea1" showname="0... .... = GEA/1: Encryption algorithm not available" size="1" pos="91" show="0" value="0" unmaskedvalue="65"/>
+      <field name="gsm_a.gm.gmm.net_cap.smdch" showname=".1.. .... = SM capabilities via dedicated channels: Mobile station supports mobile terminated point to point SMS via dedicated signalling channels" size="1" pos="91" show="1" value="1" unmaskedvalue="65"/>
+      <field name="gsm_a.gm.gmm.net_cap.smgprs" showname="..1. .... = SM capabilities via GPRS channels: Mobile station supports mobile terminated point to point SMS via GPRS packet data channels" size="1" pos="91" show="1" value="1" unmaskedvalue="65"/>
+      <field name="gsm_a.gm.gmm.net_cap.ucs2" showname="...0 .... = UCS2 support: The ME has a preference for the default alphabet (defined in 3GPP TS 23.038 [8b]) over UCS2" size="1" pos="91" show="0" value="0" unmaskedvalue="65"/>
+      <field name="gsm_a.gm.gmm.net_cap.ss_scr_ind" showname=".... 01.. = SS Screening Indicator: capability of handling of ellipsis notation and phase 2 error handling (0x1)" size="1" pos="91" show="0x00000001" value="1" unmaskedvalue="65"/>
+      <field name="gsm_a.gm.gmm.net_cap.solsa" showname=".... ..0. = SoLSA Capability: The ME does not support SoLSA" size="1" pos="91" show="0" value="0" unmaskedvalue="65"/>
+      <field name="gsm_a.gm.gmm.net_cap.rev" showname=".... ...1 = Revision level indicator: Used by a mobile station supporting R99 or later versions of the protocol" size="1" pos="91" show="1" value="1" unmaskedvalue="65"/>
+      <field name="gsm_a.gm.gmm.net_cap.pfc" showname="1... .... = PFC feature mode: Mobile station does support BSS packet flow procedures" size="1" pos="92" show="1" value="1" unmaskedvalue="e0"/>
+      <field name="gsm_a.gm.gmm.net_cap.ext_gea_bits" showname=".110 000. = Extended GEA bits: 0x30" size="1" pos="92" show="0x00000030" value="30" unmaskedvalue="e0">
+        <field name="gsm_a.gm.gmm.net_cap.gea2" showname=".1.. .... = GEA/2: Encryption algorithm available" size="1" pos="92" show="1" value="1" unmaskedvalue="e0"/>
+        <field name="gsm_a.gm.gmm.net_cap.gea3" showname="..1. .... = GEA/3: Encryption algorithm available" size="1" pos="92" show="1" value="1" unmaskedvalue="e0"/>
+        <field name="gsm_a.gm.gmm.net_cap.gea4" showname="...0 .... = GEA/4: Encryption algorithm not available" size="1" pos="92" show="0" value="0" unmaskedvalue="e0"/>
+        <field name="gsm_a.gm.gmm.net_cap.gea5" showname=".... 0... = GEA/5: Encryption algorithm not available" size="1" pos="92" show="0" value="0" unmaskedvalue="e0"/>
+        <field name="gsm_a.gm.gmm.net_cap.gea6" showname=".... .0.. = GEA/6: Encryption algorithm not available" size="1" pos="92" show="0" value="0" unmaskedvalue="e0"/>
+        <field name="gsm_a.gm.gmm.net_cap.gea7" showname=".... ..0. = GEA/7: Encryption algorithm not available" size="1" pos="92" show="0" value="0" unmaskedvalue="e0"/>
+      </field>
+      <field name="gsm_a.gm.gmm.net_cap.lcs" showname=".... ...0 = LCS VA capability: LCS value added location request notification capability not supported" size="1" pos="92" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="gsm_a.gm.gmm.net_cap.ps_irat_iu" showname="0... .... = PS inter-RAT HO from GERAN to UTRAN Iu mode capability: PS inter-RAT HO to UTRAN Iu mode not supported" size="1" pos="93" show="0" value="0" unmaskedvalue="2e"/>
+      <field name="gsm_a.gm.gmm.net_cap.ps_irat_s1" showname=".0.. .... = PS inter-RAT HO from GERAN to E-UTRAN S1 mode capability: PS inter-RAT HO to E-UTRAN S1 mode not supported" size="1" pos="93" show="0" value="0" unmaskedvalue="2e"/>
+      <field name="gsm_a.gm.gmm.net_cap.comb_proc" showname="..1. .... = EMM Combined procedures capability: Mobile station supports EMM combined procedures" size="1" pos="93" show="1" value="1" unmaskedvalue="2e"/>
+      <field name="gsm_a.gm.gmm.net_cap.isr" showname="...0 .... = ISR support: The mobile station does not support ISR" size="1" pos="93" show="0" value="0" unmaskedvalue="2e"/>
+      <field name="gsm_a.gm.gmm.net_cap.srvcc_to_geran" showname=".... 1... = SRVCC to GERAN/UTRAN capability: SRVCC from UTRAN HSPA or E-UTRAN to GERAN/UTRAN supported" size="1" pos="93" show="1" value="1" unmaskedvalue="2e"/>
+      <field name="gsm_a.gm.gmm.net_cap.epc" showname=".... .1.. = EPC capability: EPC supported" size="1" pos="93" show="1" value="1" unmaskedvalue="2e"/>
+      <field name="gsm_a.gm.gmm.net_cap.nf" showname=".... ..1. = NF capability: Mobile station supports the notification procedure" size="1" pos="93" show="1" value="1" unmaskedvalue="2e"/>
+      <field name="gsm_a.gm.gmm.net_cap.geran_net_sharing" showname=".... ...0 = GERAN network sharing capability: Mobile station does not support GERAN network sharing" size="1" pos="93" show="0" value="0" unmaskedvalue="2e"/>
+      <field name="gsm_a.gm.gmm.net_cap.up_int_prot" showname="0... .... = User plane integrity protection support: Not supported" size="1" pos="94" show="0" value="0" unmaskedvalue="01"/>
+      <field name="gsm_a.gm.gmm.net_cap.gia4" showname=".0.. .... = GIA/4: Integrity algorithm not available" size="1" pos="94" show="0" value="0" unmaskedvalue="01"/>
+      <field name="gsm_a.gm.gmm.net_cap.gia5" showname="..0. .... = GIA/5: Integrity algorithm not available" size="1" pos="94" show="0" value="0" unmaskedvalue="01"/>
+      <field name="gsm_a.gm.gmm.net_cap.gia6" showname="...0 .... = GIA/6: Integrity algorithm not available" size="1" pos="94" show="0" value="0" unmaskedvalue="01"/>
+      <field name="gsm_a.gm.gmm.net_cap.gia7" showname=".... 0... = GIA/7: Integrity algorithm not available" size="1" pos="94" show="0" value="0" unmaskedvalue="01"/>
+      <field name="gsm_a.gm.gmm.net_cap.epco_ie_ind" showname=".... .0.. = ePCO IE indicator: Used by a mobile station not supporting extended protocol configuration options IE" size="1" pos="94" show="0" value="0" unmaskedvalue="01"/>
+      <field name="gsm_a.gm.gmm.net_cap.restrict_use_enh_cov" showname=".... ..0. = Restriction on use of enhanced coverage capability: Mobile station does not support restriction on use of enhanced coverage" size="1" pos="94" show="0" value="0" unmaskedvalue="01"/>
+      <field name="gsm_a.gm.gmm.net_cap.dc_eutra_nr_cap" showname=".... ...1 = Dual connectivity of E-UTRA with NR capability: Mobile station supports dual connectivity of E-UTRA with NR" size="1" pos="94" show="1" value="1" unmaskedvalue="01"/>
+    </field>
+    <field name="" show="Location area identification - Old location area identification" size="6" pos="95" value="1305f510385f">
+      <field name="nas_eps.common.elem_id" showname="Element ID: 0x13" size="1" pos="95" show="0x00000013" value="13"/>
+      <field name="" show="Location Area Identification (LAI) - 505/01/14431" size="5" pos="96" value="05f510385f">
+        <field name="e212.lai.mcc" showname="Mobile Country Code (MCC): Australia (505)" size="2" pos="96" show="505" value="05f5"/>
+        <field name="e212.lai.mnc" showname="Mobile Network Code (MNC): Telstra Corporation Ltd. (01)" size="2" pos="97" show="1" value="f510"/>
+        <field name="gsm_a.lac" showname="Location Area Code (LAC): 0x385f (14431)" size="2" pos="99" show="0x0000385f" value="385f"/>
+      </field>
+    </field>
+    <field name="" show="Mobile station classmark 2" size="5" pos="101" value="11034f18a6">
+      <field name="nas_eps.common.elem_id" showname="Element ID: 0x11" size="1" pos="101" show="0x00000011" value="11"/>
+      <field name="gsm_a.len" showname="Length: 3" size="1" pos="102" show="3" value="03"/>
+      <field name="gsm_a.spareb8" showname="0... .... = Spare: 0" size="1" pos="103" show="0" value="0" unmaskedvalue="4f"/>
+      <field name="gsm_a.MSC_rev" showname=".10. .... = Revision Level: Used by mobile stations supporting R99 or later versions of the protocol (2)" size="1" pos="103" show="2" value="2" unmaskedvalue="4f"/>
+      <field name="gsm_a.ES_IND" showname="...0 .... = ES IND: Controlled Early Classmark Sending option is not implemented in the MS" size="1" pos="103" show="0" value="0" unmaskedvalue="4f"/>
+      <field name="gsm_a.A5_1_algorithm_sup" showname=".... 1... = A5/1 algorithm supported: encryption algorithm A5/1 not available" size="1" pos="103" show="1" value="1" unmaskedvalue="4f"/>
+      <field name="gsm_a.RF_power_capability" showname=".... .111 = RF Power Capability: RF Power capability is irrelevant in this information element (7)" size="1" pos="103" show="7" value="7" unmaskedvalue="4f"/>
+      <field name="gsm_a.spareb8" showname="0... .... = Spare: 0" size="1" pos="104" show="0" value="0" unmaskedvalue="18"/>
+      <field name="gsm_a.ps_sup_cap" showname=".0.. .... = PS capability (pseudo-synchronization capability): PS capability not present" size="1" pos="104" show="0" value="0" unmaskedvalue="18"/>
+      <field name="gsm_a.SS_screening_indicator" showname="..01 .... = SS Screening Indicator: Capability of handling of ellipsis notation and phase 2 error handling  (1)" size="1" pos="104" show="1" value="1" unmaskedvalue="18"/>
+      <field name="gsm_a.SM_cap" showname=".... 1... = SM capability (MT SMS pt to pt capability): Mobile station supports mobile terminated point to point SMS" size="1" pos="104" show="1" value="1" unmaskedvalue="18"/>
+      <field name="gsm_a.VBS_notification_rec" showname=".... .0.. = VBS notification reception: no VBS capability or no notifications wanted" size="1" pos="104" show="0" value="0" unmaskedvalue="18"/>
+      <field name="gsm_a.VGCS_notification_rec" showname=".... ..0. = VGCS notification reception: no VGCS capability or no notifications wanted" size="1" pos="104" show="0" value="0" unmaskedvalue="18"/>
+      <field name="gsm_a.FC_frequency_cap" showname=".... ...0 = FC Frequency Capability: The MS does not support the E-GSM or R-GSM band" size="1" pos="104" show="0" value="0" unmaskedvalue="18"/>
+      <field name="gsm_a.CM3" showname="1... .... = CM3: The MS supports options that are indicated in classmark 3 IE" size="1" pos="105" show="1" value="1" unmaskedvalue="a6"/>
+      <field name="gsm_a.spareb7" showname=".0.. .... = Spare: 0" size="1" pos="105" show="0" value="0" unmaskedvalue="a6"/>
+      <field name="gsm_a.LCS_VA_cap" showname="..1. .... = LCS VA capability (LCS value added location request notification capability): LCS value added location request notification capability supported" size="1" pos="105" show="1" value="1" unmaskedvalue="a6"/>
+      <field name="gsm_a.UCS2_treatment" showname="...0 .... = UCS2 treatment: the ME has a preference for the default alphabet" size="1" pos="105" show="0" value="0" unmaskedvalue="a6"/>
+      <field name="gsm_a.SoLSA" showname=".... 0... = SoLSA: The ME does not support SoLSA" size="1" pos="105" show="0" value="0" unmaskedvalue="a6"/>
+      <field name="gsm_a.CMSP" showname=".... .1.. = CMSP: CM Service Prompt: Network initiated MO CM connection request supported for at least one CM protocol" size="1" pos="105" show="1" value="1" unmaskedvalue="a6"/>
+      <field name="gsm_a.A5_3_algorithm_sup" showname=".... ..1. = A5/3 algorithm supported: encryption algorithm A5/3 available" size="1" pos="105" show="1" value="1" unmaskedvalue="a6"/>
+      <field name="gsm_a.A5_2_algorithm_sup" showname=".... ...0 = A5/2 algorithm supported: encryption algorithm A5/2 not available" size="1" pos="105" show="0" value="0" unmaskedvalue="a6"/>
+    </field>
+    <field name="" show="Supported Codec List - Supported Codecs" size="10" pos="106" value="40080402600000021f00">
+      <field name="gsm_a.dtap.elem_id" showname="Element ID: 0x40" size="1" pos="106" show="0x00000040" value="40"/>
+      <field name="gsm_a.len" showname="Length: 8" size="1" pos="107" show="8" value="08"/>
+      <field name="gsm_a.dtap.sysid" showname="System Identification (SysID): UMTS (0x04)" size="1" pos="108" show="0x00000004" value="04"/>
+      <field name="gsm_a.dtap.bitmap_length" showname="Bitmap Length: 2" size="1" pos="109" show="2" value="02"/>
+      <field name="" show="Codec Bitmap for SysID 1" size="2" pos="110" value="6000">
+        <field name="gsm_a.dtap.codec.tdma_efr" showname="0... .... = TDMA EFR: False" size="1" pos="110" show="0" value="0" unmaskedvalue="60"/>
+        <field name="gsm_a.dtap.codec.umts_amr_2" showname=".1.. .... = UMTS AMR 2: True" size="1" pos="110" show="1" value="1" unmaskedvalue="60"/>
+        <field name="gsm_a.dtap.codec.umts_amr" showname="..1. .... = UMTS AMR: True" size="1" pos="110" show="1" value="1" unmaskedvalue="60"/>
+        <field name="gsm_a.dtap.codec.hr_amr" showname="...0 .... = HR AMR: False" size="1" pos="110" show="0" value="0" unmaskedvalue="60"/>
+        <field name="gsm_a.dtap.codec.fr_amr" showname=".... 0... = FR AMR: False" size="1" pos="110" show="0" value="0" unmaskedvalue="60"/>
+        <field name="gsm_a.dtap.codec.gsm_efr" showname=".... .0.. = GSM EFR: False" size="1" pos="110" show="0" value="0" unmaskedvalue="60"/>
+        <field name="gsm_a.dtap.codec.gsm_hr" showname=".... ..0. = GSM HR: False" size="1" pos="110" show="0" value="0" unmaskedvalue="60"/>
+        <field name="gsm_a.dtap.codec.gsm_fr" showname=".... ...0 = GSM FR: False" size="1" pos="110" show="0" value="0" unmaskedvalue="60"/>
+        <field name="gsm_a.spare_bits" showname="0... .... = Spare bit(s): 0" size="1" pos="111" show="0" value="00"/>
+        <field name="gsm_a.dtap.codec.umts_evs" showname=".0.. .... = UMTS EVS: False" size="1" pos="111" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.ohr_amr_wb" showname="..0. .... = OHR AMR-WB: False" size="1" pos="111" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.ofr_amr_wb" showname="...0 .... = OFR AMR-WB: False" size="1" pos="111" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.ohr_amr" showname=".... 0... = OHR AMR: False" size="1" pos="111" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.umts_amr_wb" showname=".... .0.. = UMTS AMR-WB: False" size="1" pos="111" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.fr_amr_wb" showname=".... ..0. = FR AMR-WB: False" size="1" pos="111" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.pdc_efr" showname=".... ...0 = PDC EFR: False" size="1" pos="111" show="0" value="0" unmaskedvalue="00"/>
+      </field>
+      <field name="gsm_a.dtap.sysid" showname="System Identification (SysID): GSM (0x00)" size="1" pos="112" show="0x00000000" value="00"/>
+      <field name="gsm_a.dtap.bitmap_length" showname="Bitmap Length: 2" size="1" pos="113" show="2" value="02"/>
+      <field name="" show="Codec Bitmap for SysID 2" size="2" pos="114" value="1f00">
+        <field name="gsm_a.dtap.codec.tdma_efr" showname="0... .... = TDMA EFR: False" size="1" pos="114" show="0" value="0" unmaskedvalue="1f"/>
+        <field name="gsm_a.dtap.codec.umts_amr_2" showname=".0.. .... = UMTS AMR 2: False" size="1" pos="114" show="0" value="0" unmaskedvalue="1f"/>
+        <field name="gsm_a.dtap.codec.umts_amr" showname="..0. .... = UMTS AMR: False" size="1" pos="114" show="0" value="0" unmaskedvalue="1f"/>
+        <field name="gsm_a.dtap.codec.hr_amr" showname="...1 .... = HR AMR: True" size="1" pos="114" show="1" value="1" unmaskedvalue="1f"/>
+        <field name="gsm_a.dtap.codec.fr_amr" showname=".... 1... = FR AMR: True" size="1" pos="114" show="1" value="1" unmaskedvalue="1f"/>
+        <field name="gsm_a.dtap.codec.gsm_efr" showname=".... .1.. = GSM EFR: True" size="1" pos="114" show="1" value="1" unmaskedvalue="1f"/>
+        <field name="gsm_a.dtap.codec.gsm_hr" showname=".... ..1. = GSM HR: True" size="1" pos="114" show="1" value="1" unmaskedvalue="1f"/>
+        <field name="gsm_a.dtap.codec.gsm_fr" showname=".... ...1 = GSM FR: True" size="1" pos="114" show="1" value="1" unmaskedvalue="1f"/>
+        <field name="gsm_a.spare_bits" showname="0... .... = Spare bit(s): 0" size="1" pos="115" show="0" value="00"/>
+        <field name="gsm_a.dtap.codec.umts_evs" showname=".0.. .... = UMTS EVS: False" size="1" pos="115" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.ohr_amr_wb" showname="..0. .... = OHR AMR-WB: False" size="1" pos="115" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.ofr_amr_wb" showname="...0 .... = OFR AMR-WB: False" size="1" pos="115" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.ohr_amr" showname=".... 0... = OHR AMR: False" size="1" pos="115" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.umts_amr_wb" showname=".... .0.. = UMTS AMR-WB: False" size="1" pos="115" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.fr_amr_wb" showname=".... ..0. = FR AMR-WB: False" size="1" pos="115" show="0" value="0" unmaskedvalue="00"/>
+        <field name="gsm_a.dtap.codec.pdc_efr" showname=".... ...0 = PDC EFR: False" size="1" pos="115" show="0" value="0" unmaskedvalue="00"/>
+      </field>
+    </field>
+    <field name="" show="Voice Domain Preference and UE&#x27;s Usage Setting" size="3" pos="116" value="5d0106">
+      <field name="gsm_a.gm.elem_id" showname="Element ID: 0x5d" size="1" pos="116" show="0x0000005d" value="5d"/>
+      <field name="gsm_a.len" showname="Length: 1" size="1" pos="117" show="1" value="01"/>
+      <field name="gsm_a.spare_bits" showname="0000 0... = Spare bit(s): 0" size="1" pos="118" show="0" value="06"/>
+      <field name="gsm_a.gm.gmm.ue_usage_setting" showname=".... .1.. = UE&#x27;s usage setting: Data centric" size="1" pos="118" show="1" value="06"/>
+      <field name="gsm_a.gm.gmm.voice_domain_pref_for_eutran" showname=".... ..10 = Voice domain preference for E-UTRAN: CS voice preferred, IMS PS Voice as secondary (2)" size="1" pos="118" show="2" value="06"/>
+    </field>
+    <field name="" show="GUTI type - Old GUTI type" size="1" pos="119" value="e0">
+      <field name="gsm_a.common.elem_id" showname="1110 .... = Element ID: 0xe-" size="1" pos="119" show="0x0000000e" value="E" unmaskedvalue="e0"/>
+      <field name="nas_eps.spare_bits" showname=".... 000. = Spare bit(s): 0x00" size="1" pos="119" show="0x00000000" value="e0"/>
+      <field name="nas_eps.emm.guti_type" showname=".... ...0 = GUTI type: Native GUTI" size="1" pos="119" show="0" value="e0"/>
+    </field>
+    <field name="" show="MS network feature support" size="1" pos="120" value="c1">
+      <field name="gsm_a.common.elem_id" showname="1100 .... = Element ID: 0xc-" size="1" pos="120" show="0x0000000c" value="C" unmaskedvalue="c1"/>
+      <field name="gsm_a.spare_bits" showname=".... 000. = Spare bit(s): 0" size="1" pos="120" show="0" value="c1"/>
+      <field name="gsm_a.ext_periodic_timers" showname=".... ...1 = Extended periodic timers: MS supports the extended periodic timer in this domain" size="1" pos="120" show="1" value="c1"/>
+    </field>
+    <field name="" show="Network Resource Identifier Container - TMSI based NRI container" size="4" pos="121" value="10020100">
+      <field name="gsm_a.gm.elem_id" showname="Element ID: 0x10" size="1" pos="121" show="0x00000010" value="10"/>
+      <field name="gsm_a.len" showname="Length: 2" size="1" pos="122" show="2" value="02"/>
+      <field name="gsm_a.gm.gmm.nri_cont_value" showname="0000 0001 00.. .... = NRI container value: 0x004" size="2" pos="123" show="0x00000004" value="4" unmaskedvalue="0100"/>
+      <field name="gsm_a.spare_bits" showname="..00 0000 = Spare bit(s): 0" size="1" pos="124" show="0" value="00"/>
+    </field>
+    <field name="" show="UE additional security capability" size="6" pos="125" value="6f04e0006000">
+      <field name="nas_eps.emm.elem_id" showname="Element ID: 0x6f" size="1" pos="125" show="0x0000006f" value="6f"/>
+      <field name="gsm_a.len" showname="Length: 4" size="1" pos="126" show="4" value="04"/>
+      <field name="nas_eps.emm.5g_ea0" showname="1... .... = 5G-EA0: Supported" size="1" pos="127" show="1" value="1" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.128_5g_ea1" showname=".1.. .... = 128-5G-EA1: Supported" size="1" pos="127" show="1" value="1" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.128_5g_ea2" showname="..1. .... = 128-5G-EA2: Supported" size="1" pos="127" show="1" value="1" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.128_5g_ea3" showname="...0 .... = 128-5G-EA3: Not supported" size="1" pos="127" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.5g_ea4" showname=".... 0... = 5G-EA4: Not supported" size="1" pos="127" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.5g_ea5" showname=".... .0.. = 5G-EA5: Not supported" size="1" pos="127" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.5g_ea6" showname=".... ..0. = 5G-EA6: Not supported" size="1" pos="127" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.5g_ea7" showname=".... ...0 = 5G-EA7: Not supported" size="1" pos="127" show="0" value="0" unmaskedvalue="e0"/>
+      <field name="nas_eps.emm.5g_ea8" showname="0... .... = 5G-EA8: Not supported" size="1" pos="128" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ea9" showname=".0.. .... = 5G-EA9: Not supported" size="1" pos="128" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ea10" showname="..0. .... = 5G-EA10: Not supported" size="1" pos="128" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ea11" showname="...0 .... = 5G-EA11: Not supported" size="1" pos="128" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ea12" showname=".... 0... = 5G-EA12: Not supported" size="1" pos="128" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ea13" showname=".... .0.. = 5G-EA13: Not supported" size="1" pos="128" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ea14" showname=".... ..0. = 5G-EA14: Not supported" size="1" pos="128" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ea15" showname=".... ...0 = 5G-EA15: Not supported" size="1" pos="128" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ia0" showname="0... .... = 5G-IA0: Not supported" size="1" pos="129" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.128_5g_ia1" showname=".1.. .... = 128-5G-IA1: Supported" size="1" pos="129" show="1" value="1" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.128_5g_ia2" showname="..1. .... = 128-5G-IA2: Supported" size="1" pos="129" show="1" value="1" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.128_5g_ia3" showname="...0 .... = 128-5G-IA3: Not supported" size="1" pos="129" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.5g_ia4" showname=".... 0... = 5G-IA4: Not supported" size="1" pos="129" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.5g_ia5" showname=".... .0.. = 5G-IA5: Not supported" size="1" pos="129" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.5g_ia6" showname=".... ..0. = 5G-IA6: Not supported" size="1" pos="129" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.5g_ia7" showname=".... ...0 = 5G-IA7: Not supported" size="1" pos="129" show="0" value="0" unmaskedvalue="60"/>
+      <field name="nas_eps.emm.5g_ia8" showname="0... .... = 5G-IA8: Not supported" size="1" pos="130" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ia9" showname=".0.. .... = 5G-IA9: Not supported" size="1" pos="130" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ia10" showname="..0. .... = 5G-IA10: Not supported" size="1" pos="130" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ia11" showname="...0 .... = 5G-IA11: Not supported" size="1" pos="130" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ia12" showname=".... 0... = 5G-IA12: Not supported" size="1" pos="130" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ia13" showname=".... .0.. = 5G-IA13: Not supported" size="1" pos="130" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ia14" showname=".... ..0. = 5G-IA14: Not supported" size="1" pos="130" show="0" value="0" unmaskedvalue="00"/>
+      <field name="nas_eps.emm.5g_ia15" showname=".... ...0 = 5G-IA15: Not supported" size="1" pos="130" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+  </proto>
+</packet>
+
+
+</pdml>
